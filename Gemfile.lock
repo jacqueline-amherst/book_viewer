@@ -28,13 +28,12 @@ GEM
 
 PLATFORMS
   arm64-darwin-22
-  ruby
-  unknown
   x86_64-linux
 
 DEPENDENCIES
   erubis
   puma (= 5)
+  rack
   sinatra
   sinatra-contrib
   webrick

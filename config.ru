@@ -1,2 +1,2 @@
 require "./book_viewer"
-run Sinatra::application
+run Sinatra::Application
