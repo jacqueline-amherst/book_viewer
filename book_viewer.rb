@@ -1,5 +1,5 @@
 require "sinatra"
-require "sinatra/reloader"
+require "sinatra/reloader" if development?
 require "tilt/erubis"
 
 before do
@@ -18,7 +18,6 @@ helpers do
   def highlight(text, term)
     text.gsub(term, %(<strong>#{term}</strong>))
   end
-
 end
 
 def each_chapter
